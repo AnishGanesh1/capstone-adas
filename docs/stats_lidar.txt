@@ -1,0 +1,46 @@
+root : /home/s21/dataset/lidar_raw
+tier : adverse  (22 conditions x 4 towns = 88 cells)
+have : 7800 frames total
+
+  condition               Town01      Town03      Town02 Town10HD_Op    total
+  ---------------------------------------------------------------------------
+  rain                        75          75          75          75      300
+  fog                         75          75          75          75      300
+  haze                        75          75          75          75      300
+  hail                        75          75          75          75      300
+  night                       75          75          75          75      300
+  wet_night                   75          75          75          75      300
+  fog_dense                  125          75         125         125      450
+  fog_night                  125          75         125         125      450
+  storm_day                  125          75         125         125      450
+  storm_night                125          75         125         125      450
+  hail_severe                125          75         125         125      450
+  glare_dawn                 125          75         125         125      450
+  glare_wet                  125          75         125         125      450
+  midnight                   125          75         125         125      450
+  fog_whiteout                75          75          75          75      300
+  fog_night_extreme           75          75          75          75      300
+  monsoon                     75          75          75          75      300
+  monsoon_night               75          75          75          75      300
+  blizzard                    75          75          75          75      300
+  glare_fog                   75          75          75          75      300
+  storm_dusk                  75          75          75          75      300
+  deep_night_fog              75          75          75          75      300
+  ---------------------------------------------------------------------------
+  TIER TOTAL                                                             7800
+
+  PLANNING - what each --frames value gives you
+  --frames      total        new   min per cell
+        50       7800          0             75
+        75       7800          0             75
+       100       9400       1600            100
+       125      11000       3200            125
+       150      13200       5400            150
+       200      17600       9800            200
+       250      22000      14200            250
+       300      26400      18600            300
+       400      35200      27400            400
+
+  "min per cell" is what your WORST-covered condition ends up with.
+  A tier with 8 frames in it is not a tier, it is noise - pick a
+  --frames that fills the gaps, even if the total overshoots.
