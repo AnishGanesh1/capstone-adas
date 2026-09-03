@@ -1,0 +1,58 @@
+verifying /home/s21/dataset/lidar_raw
+
+[1] LiDAR points per condition
+    blizzard       n= 300  mean    13637
+    deep_night_fog n= 300  mean    18346
+    fog            n= 300  mean    25318
+    fog_dense      n= 450  mean    18713
+    fog_night      n= 450  mean    20267
+    fog_night_extreme n= 300  mean    15409
+    fog_whiteout   n= 300  mean    13919
+    glare_dawn     n= 450  mean    32955
+    glare_fog      n= 300  mean    23930
+    glare_wet      n= 450  mean    29279
+    hail           n= 300  mean    23083
+    hail_severe    n= 450  mean    17291
+    haze           n= 300  mean    32819
+    midnight       n= 450  mean    33119
+    monsoon        n= 300  mean    16025
+    monsoon_night  n= 300  mean    15193
+    night          n= 300  mean    33116
+    rain           n= 300  mean    26085
+    storm_day      n= 450  mean    21014
+    storm_dusk     n= 300  mean    17396
+    storm_night    n= 450  mean    19031
+    wet_night      n= 300  mean    32416
+
+[2] objects per frame (from meta boxes_3d)
+    frames 7800 | mean 12.5 objects | median 11 | max 44 | zero-object frames 0
+    vehicle      86783
+    pedestrian   10331
+
+[3] BEV label statistics
+    images 7800 | mean 6.4 boxes | empty 0
+    car          39621
+    truck        5841
+    bus          0
+    motorcycle   2311
+    bicycle      2084
+    pedestrian   124
+    all OBB rows well formed (9 fields, normalised)
+
+[4] file integrity
+    lidar 7800 | meta 7800
+    bev images 7800 | bev labels 7800
+
+[5] drawing 20 BEV frames with boxes
+    wrote to /home/s21/dataset/bev_raw/_verify
+    ACTION: open them. Bright rectangles in the image must line up with polygons.
+
+============================================================
+  points per condition     PASS
+  objects per frame        PASS
+  bev labels               PASS
+  file integrity           PASS
+  draw bev                 PASS
+============================================================
+All applicable checks passed.
+STILL REQUIRED: open /home/s21/dataset/bev_raw/_verify/ and look.

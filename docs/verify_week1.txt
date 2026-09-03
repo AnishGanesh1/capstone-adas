@@ -1,0 +1,61 @@
+verifying /home/s21/dataset/train
+
+[1] drawing boxes on 30 random frames
+    wrote 30 annotated frames to /home/s21/dataset/train/_verify
+    ACTION: open them. Boxes must sit on lamp heads, colour must match the lit lamp.
+
+[2] LiDAR point count per condition (fog MUST be lower than clear)
+    clear      n= 285  mean points    33139  (+0.0% vs clear)
+    rain       n= 285  mean points    25440  (-23.2% vs clear)
+    fog        n= 285  mean points    24658  (-25.6% vs clear)
+    haze       n= 285  mean points    32187  (-2.9% vs clear)
+    hail       n= 285  mean points    22073  (-33.4% vs clear)
+    night      n= 285  mean points    32594  (-1.6% vs clear)
+    wet_night  n= 285  mean points    32987  (-0.5% vs clear)
+
+[3] class balance per condition
+    condition     tl_red tl_yellow  tl_green    tl_off    total
+    clear            724        37       197         0      958
+    rain             920        78       376         0     1374
+    fog              963        78       388         0     1429
+    haze             869        50       266         0     1185
+    hail             856        90       360         0     1306
+    night            858        86       337         0     1281
+    wet_night        803       114       304         0     1221
+    ALL             5993       533      2228         0     8754
+
+[4] box height histogram (pixels)
+    <8           0  
+    8-12      2066  ############################################################
+    12-16     1684  ################################################
+    16-24     1995  #########################################################
+    24-32     1112  ################################
+    32-48     1007  #############################
+    48-64      414  ############
+    >64        476  #############
+    median 18.2 px, 90th pct 48.2 px
+
+[5] file integrity
+    images 1995 | labels 1995 | lidar 1995 | meta 1995
+    all label rows well formed
+
+[6] frames per condition
+    clear        285
+    rain         285
+    fog          285
+    haze         285
+    hail         285
+    night        285
+    wet_night    285
+    TOTAL       1995
+
+============================================================
+  draw boxes               PASS
+  lidar per condition      PASS
+  class balance            PASS
+  box sizes                PASS
+  file integrity           PASS
+  condition counts         PASS
+============================================================
+All automated checks passed.
+STILL REQUIRED: open /home/s21/dataset/train/_verify/ and look at the frames.

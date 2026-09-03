@@ -1,0 +1,163 @@
+[
+ {
+  "condition": "blizzard",
+  "frames": 300,
+  "mean_before": 13637.05,
+  "mean_after": 13107.386666666667,
+  "removed_pct": 3.8840022829961907
+ },
+ {
+  "condition": "clear",
+  "frames": 100,
+  "mean_before": 33577.2,
+  "mean_after": 32282.47,
+  "removed_pct": 3.8559796528596646
+ },
+ {
+  "condition": "deep_night_fog",
+  "frames": 300,
+  "mean_before": 18345.93,
+  "mean_after": 17677.123333333333,
+  "removed_pct": 3.6455315520481535
+ },
+ {
+  "condition": "fog",
+  "frames": 300,
+  "mean_before": 25317.64,
+  "mean_after": 24386.956666666665,
+  "removed_pct": 3.6760272021141516
+ },
+ {
+  "condition": "fog_dense",
+  "frames": 450,
+  "mean_before": 18712.584444444445,
+  "mean_after": 17986.52888888889,
+  "removed_pct": 3.8800388995498314
+ },
+ {
+  "condition": "fog_night",
+  "frames": 450,
+  "mean_before": 20266.706666666665,
+  "mean_after": 19505.402222222223,
+  "removed_pct": 3.756428989504179
+ },
+ {
+  "condition": "fog_night_extreme",
+  "frames": 300,
+  "mean_before": 15408.586666666666,
+  "mean_after": 14816.083333333334,
+  "removed_pct": 3.845280207399504
+ },
+ {
+  "condition": "fog_whiteout",
+  "frames": 300,
+  "mean_before": 13919.386666666667,
+  "mean_after": 13384.083333333334,
+  "removed_pct": 3.845739371658141
+ },
+ {
+  "condition": "glare_dawn",
+  "frames": 450,
+  "mean_before": 32954.71111111111,
+  "mean_after": 31739.775555555556,
+  "removed_pct": 3.686682463879709
+ },
+ {
+  "condition": "glare_fog",
+  "frames": 300,
+  "mean_before": 23929.673333333332,
+  "mean_after": 23052.416666666668,
+  "removed_pct": 3.6659784462860667
+ },
+ {
+  "condition": "glare_wet",
+  "frames": 450,
+  "mean_before": 29278.568888888887,
+  "mean_after": 28184.391111111112,
+  "removed_pct": 3.737128621040664
+ },
+ {
+  "condition": "hail",
+  "frames": 300,
+  "mean_before": 23083.01,
+  "mean_after": 22236.753333333334,
+  "removed_pct": 3.6661452153192498
+ },
+ {
+  "condition": "hail_severe",
+  "frames": 450,
+  "mean_before": 17290.637777777778,
+  "mean_after": 16647.706666666665,
+  "removed_pct": 3.7183770741957223
+ },
+ {
+  "condition": "haze",
+  "frames": 300,
+  "mean_before": 32819.08,
+  "mean_after": 31561.006666666668,
+  "removed_pct": 3.83335953760231
+ },
+ {
+  "condition": "midnight",
+  "frames": 450,
+  "mean_before": 33119.16444444445,
+  "mean_after": 31909.14,
+  "removed_pct": 3.653547620364017
+ },
+ {
+  "condition": "monsoon",
+  "frames": 300,
+  "mean_before": 16024.646666666667,
+  "mean_after": 15382.88,
+  "removed_pct": 4.004872494328538
+ },
+ {
+  "condition": "monsoon_night",
+  "frames": 300,
+  "mean_before": 15192.966666666667,
+  "mean_after": 14646.223333333333,
+  "removed_pct": 3.598660783827612
+ },
+ {
+  "condition": "night",
+  "frames": 300,
+  "mean_before": 33115.74,
+  "mean_after": 31941.37,
+  "removed_pct": 3.5462592712710017
+ },
+ {
+  "condition": "rain",
+  "frames": 300,
+  "mean_before": 26085.406666666666,
+  "mean_after": 25080.27,
+  "removed_pct": 3.853252814920005
+ },
+ {
+  "condition": "storm_day",
+  "frames": 450,
+  "mean_before": 21014.03777777778,
+  "mean_after": 20232.626666666667,
+  "removed_pct": 3.718519588545943
+ },
+ {
+  "condition": "storm_dusk",
+  "frames": 300,
+  "mean_before": 17395.83,
+  "mean_after": 16736.106666666667,
+  "removed_pct": 3.792422283577934
+ },
+ {
+  "condition": "storm_night",
+  "frames": 450,
+  "mean_before": 19030.715555555555,
+  "mean_after": 18280.524444444443,
+  "removed_pct": 3.9420015969505173
+ },
+ {
+  "condition": "wet_night",
+  "frames": 300,
+  "mean_before": 32415.77,
+  "mean_after": 31256.913333333334,
+  "removed_pct": 3.5749780636605832
+ }
+]

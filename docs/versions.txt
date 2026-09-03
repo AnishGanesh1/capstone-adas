@@ -1,0 +1,10 @@
+Creating new Ultralytics Settings v0.0.7 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/home/s21/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart#ultralytics-settings.
+python      3.12.3
+carla-py    /home/s21/venv-carla/lib/python3.12/site-packages/carla/__init__.py
+torch       2.13.0+cu130 cuda True
+ultralytics 8.4.131
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 4090, 595.84, 24564 MiB
+carla-server 0.9.16

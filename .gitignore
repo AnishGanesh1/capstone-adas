@@ -1,0 +1,19 @@
+# datasets live on disk, never in git
+dataset/
+*.jpg
+*.png
+*.npy
+*.tar
+*.tar.gz
+*.zip
+
+# python
+__pycache__/
+*.pyc
+venv*/
+.venv/
+
+# logs and scratch
+logs/
+*.log
+_verify/
