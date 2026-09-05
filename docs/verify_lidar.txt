@@ -43,7 +43,7 @@ verifying /home/s21/dataset/lidar_raw
     lidar 7800 | meta 7800
     bev images 7800 | bev labels 7800
 
-[5] drawing 20 BEV frames with boxes
+[5] drawing 30 BEV frames with boxes
     wrote to /home/s21/dataset/bev_raw/_verify
     ACTION: open them. Bright rectangles in the image must line up with polygons.
 

@@ -32,7 +32,7 @@ LIDAR_BASE = {
 MIN_BOX_PX = 8            # discard traffic lights shorter than this
 MIN_VISIBLE_FRAC = 0.35   # discard if less of the box is genuinely the lamp
 MAX_TL_DIST = 90.0        # metres
-SEM_TAG_TRAFFIC_LIGHT = 18   # VERIFY with detect_tl_tag.py before a full run
+SEM_TAG_TRAFFIC_LIGHT = 7   # VERIFIED on this build - do not overwrite   # VERIFY with detect_tl_tag.py before a full run
 
 # ---------------------------------------------------------------- capture
 SETTLE_TICKS = 20         # after a weather change, before capturing

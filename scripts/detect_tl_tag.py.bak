@@ -76,11 +76,6 @@ def main():
         raise SystemExit('could not spawn ego')
     ego.set_autopilot(True, tm.get_port())
 
-    # an actor is not real until the next tick
-    if world.get_settings().synchronous_mode:
-        world.tick()
-    else:
-        world.wait_for_tick()
     rig = Rig(world, ego)
     rig.set_lidar(C.CONDITIONS['clear']['lidar'])
     world.set_weather(carla.WeatherParameters(**C.CONDITIONS['clear']['weather']))
