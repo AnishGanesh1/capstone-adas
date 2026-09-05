@@ -1,0 +1,107 @@
+verifying /home/s21/dataset/final
+
+[1] drawing boxes on 40 random frames
+    wrote 40 annotated frames to /home/s21/dataset/final/_verify
+    ACTION: open them. Boxes must sit on lamp heads, colour must match the lit lamp.
+
+[2] LiDAR point count per condition (fog MUST be lower than clear)
+    rain       n= 681  mean points        0
+    fog        n= 681  mean points        0
+    haze       n= 681  mean points        0
+    hail       n= 681  mean points        0
+    night      n= 681  mean points        0
+    wet_night  n= 681  mean points        0
+    fog_dense  n= 681  mean points        0
+    fog_night  n= 681  mean points        0
+    storm_day  n= 681  mean points        0
+    storm_night n= 681  mean points        0
+    hail_severe n= 681  mean points        0
+    glare_dawn n= 681  mean points        0
+    glare_wet  n= 681  mean points        0
+    midnight   n= 681  mean points        0
+    fog_whiteout n= 681  mean points        0
+    fog_night_extreme n= 681  mean points        0
+    monsoon    n= 681  mean points        0
+    monsoon_night n= 681  mean points        0
+    blizzard   n= 681  mean points        0
+    glare_fog  n= 681  mean points        0
+    storm_dusk n= 681  mean points        0
+    deep_night_fog n= 681  mean points        0
+
+[3] class balance per condition
+    condition     tl_red tl_yellow  tl_green    tl_off    total
+    rain            1238      1224      1180         0     3642
+    fog             1239      1185      1232         0     3656
+    haze            1250      1192      1224         0     3666
+    hail            1254      1221      1173         0     3648
+    night           1276      1195      1217         0     3688
+    wet_night       1242      1214      1188         0     3644
+    fog_dense       1267      1192      1203         0     3662
+    fog_night       1208      1203      1239         0     3650
+    storm_day       1238      1217      1185         0     3640
+    storm_night      1263      1190      1204         0     3657
+    hail_severe      1252      1196      1192         0     3640
+    glare_dawn      1249      1213      1190         0     3652
+    glare_wet       1234      1208      1216         0     3658
+    midnight        1229      1192      1230         0     3651
+    fog_whiteout      1245      1220      1198         0     3663
+    fog_night_extreme      1239      1216      1193         0     3648
+    monsoon         1242      1209      1193         0     3644
+    monsoon_night      1283      1200      1200         0     3683
+    blizzard        1244      1191      1191         0     3626
+    glare_fog       1253      1203      1194         0     3650
+    storm_dusk      1255      1208      1189         0     3652
+    deep_night_fog      1248      1204      1209         0     3661
+    ALL            27448     26493     26440         0    80381
+
+[4] box height histogram (pixels)
+    <8           0  
+    8-12     12144  ############################
+    12-16    17233  ########################################
+    16-24    25443  ############################################################
+    24-32    12303  #############################
+    32-48     8401  ###################
+    48-64     2617  ######
+    >64       2240  #####
+    median 18.8 px, 90th pct 39.8 px
+
+[5] file integrity
+    images 14982 | labels 14982 | lidar 0 | meta 14982
+    FAIL: 14982 images have no lidar (e.g. Town01_blizzard_00000)
+    all label rows well formed
+
+[6] frames per condition
+    clear          0
+    rain         681
+    fog          681
+    haze         681
+    hail         681
+    night        681
+    wet_night    681
+    fog_dense    681
+    fog_night    681
+    storm_day    681
+    storm_night   681
+    hail_severe   681
+    glare_dawn   681
+    glare_wet    681
+    midnight     681
+    fog_whiteout   681
+    fog_night_extreme   681
+    monsoon      681
+    monsoon_night   681
+    blizzard     681
+    glare_fog    681
+    storm_dusk   681
+    deep_night_fog   681
+    TOTAL      14982
+
+============================================================
+  draw boxes               PASS
+  lidar per condition      PASS
+  class balance            PASS
+  box sizes                PASS
+  file integrity           FAIL
+  condition counts         PASS
+============================================================
+Fix the failures before capturing the full dataset.

@@ -115,11 +115,6 @@ def main():
     ap.add_argument('--severity', type=float, default=1.0,
                     help='scale every preset harder, e.g. 1.3 = 30%% worse')
     ap.add_argument('--save-sem', action='store_true', help='also write semantic PNGs (big)')
-    ap.add_argument('--negatives-only', action='store_true',
-                    help='keep ONLY frames with no traffic light - street layout negatives')
-    ap.add_argument('--tag', default='',
-                    help='extra stem tag, e.g. "neg", so these get their own counter '
-                         'and never collide with positives in the same directory')
     ap.add_argument('--no-lidar', action='store_true',
                     help='camera / traffic-light only: skip LiDAR spawn and .npy writes '
                          '(roughly 2x faster, ~1 MB per frame saved)')
@@ -131,8 +126,6 @@ def main():
             raise SystemExit('unknown condition: %s' % c)
     sev = args.severity
     sev_tag = '' if sev == 1.0 else '_s%d' % round(sev * 100)
-    if args.tag:
-        sev_tag += '_' + args.tag
     print('tier=%s  %d conditions  severity=%.2f%s'
           % (args.tier, len(conds), sev, '  (ADVERSE ONLY)' if 'clear' not in conds else ''))
 
@@ -244,11 +237,7 @@ def main():
                 rows, meta_rows = traffic_light_labels(
                     world, rig.sensors['rgb'], rig.k, sem)
 
-                if args.negatives_only:
-                    if rows:
-                        n_skip_bg += 1
-                        continue
-                elif not rows and rng.random() > C.BACKGROUND_KEEP:
+                if not rows and rng.random() > C.BACKGROUND_KEEP:
                     n_skip_bg += 1
                     continue
 

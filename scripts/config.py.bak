@@ -1,10 +1,10 @@
 """Single source of truth. Every script imports from here. Do not duplicate values."""
 
 # ---------------------------------------------------------------- splits
-TOWNS_TRAIN = ['Town01', 'Town03', 'Town04', 'Town05']
+TOWNS_TRAIN = ['Town01', 'Town03']
 TOWNS_VAL   = ['Town02']
 TOWNS_TEST  = ['Town10HD_Opt']
-ALL_TOWNS = TOWNS_TRAIN + TOWNS_VAL + TOWNS_TEST
+ALL_TOWNS   = TOWNS_TRAIN + TOWNS_VAL + TOWNS_TEST
 
 # ---------------------------------------------------------------- classes
 TL_CLASSES = ['tl_red', 'tl_yellow', 'tl_green', 'tl_off']
@@ -13,7 +13,7 @@ TL_CLASS_ID = {'Red': 0, 'Yellow': 1, 'Green': 2, 'Off': 3}
 BEV_CLASSES = ['car', 'truck', 'bus', 'motorcycle', 'bicycle', 'pedestrian']
 
 # ---------------------------------------------------------------- sensors
-IMAGE_W, IMAGE_H, FOV = 1600, 900, 90.0
+IMAGE_W, IMAGE_H, FOV = 1280, 720, 90.0
 FIXED_DELTA = 0.05                       # 20 Hz
 CAM_X, CAM_Z = 1.5, 2.4                  # windscreen mount
 LIDAR_X, LIDAR_Z = 0.0, 2.4              # roof mount
