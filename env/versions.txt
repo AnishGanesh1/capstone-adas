@@ -1,0 +1,7 @@
+python       3.12.3
+torch        2.13.0+cu130
+cuda         13.0 | available True
+ultralytics  8.4.131
+numpy        2.5.2
+opencv       5.0.0
+scipy        1.17.1
