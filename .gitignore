@@ -17,3 +17,5 @@ venv*/
 logs/
 *.log
 _verify/
+runs/
+*.pt
