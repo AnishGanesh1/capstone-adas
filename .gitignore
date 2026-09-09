@@ -19,3 +19,5 @@ logs/
 _verify/
 runs/
 *.pt
+runs/
+*.pt
