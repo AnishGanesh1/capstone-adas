@@ -1,0 +1,27 @@
+condition                 camera     lidar  lidar edge
+-------------------------------------------------------
+ALL                       0.2330    0.5084     +0.2754
+night                     0.0606    0.6742     +0.6136
+deep_night_fog            0.1890    0.7468     +0.5578
+rain                      0.1153    0.6172     +0.5019
+wet_night                 0.0991    0.5713     +0.4722
+midnight                  0.1180    0.5830     +0.4650
+storm_night               0.1891    0.6462     +0.4571
+hail                      0.2428    0.6804     +0.4376
+haze                      0.1737    0.5882     +0.4145
+glare_dawn                0.1931    0.5600     +0.3669
+fog_night                 0.2606    0.5922     +0.3316
+fog_whiteout              0.1616    0.4830     +0.3214
+hail_severe               0.3289    0.6193     +0.2904
+glare_wet                 0.2730    0.5434     +0.2704
+fog_night_extreme         0.2199    0.4878     +0.2679
+fog_dense                 0.2369    0.4441     +0.2072
+storm_dusk                0.3533    0.5598     +0.2065
+monsoon                   0.3688    0.5498     +0.1810
+monsoon_night             0.2400    0.4165     +0.1765
+storm_day                 0.3239    0.4678     +0.1439
+fog                       0.3584    0.4881     +0.1297
+glare_fog                 0.3798    0.4814     +0.1016
+blizzard                  0.3899    0.4122     +0.0223
+
+written: ~/capstone/docs/sensor_comparison.md
